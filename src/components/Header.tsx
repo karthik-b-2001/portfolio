@@ -19,7 +19,7 @@ const Header = () => {
           </div>
 
           <div className="hidden md:flex space-x-4">
-            <a href="https://github.com/" target="_blank" rel="noopener noreferrer" className="text-gray-600 hover:text-gray-900">
+            <a href="https://github.com/karthik-b-2001" target="_blank" rel="noopener noreferrer" className="text-gray-600 hover:text-gray-900">
               <Github size={20} />
             </a>
             <a href="https://www.linkedin.com/in/karth1kb/" target="_blank" rel="noopener noreferrer" className="text-gray-600 hover:text-gray-900">
