@@ -1,4 +1,3 @@
-import React from 'react';
 import { workExperience, internships } from '../../data/portfolio';
 
 const ExperienceCard = ({ experience }: { experience: typeof workExperience[0] }) => (

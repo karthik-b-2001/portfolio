@@ -1,5 +1,3 @@
-import React from 'react';
-
 const navItems = [
   { href: '#about', label: 'About' },
   { href: '#experience', label: 'Experience' },
