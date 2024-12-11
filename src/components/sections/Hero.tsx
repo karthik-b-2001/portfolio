@@ -13,12 +13,12 @@ const Hero = () => {
         </p>
         <div className="flex flex-wrap justify-center gap-4">
           <a
-            href="https://github.com/"
+            href="https://github.com/karthik-b-2001"
             target="_blank"
             rel="noopener noreferrer"
             className="bg-gray-800 dark:bg-gray-700 text-white px-6 py-3 rounded-lg flex items-center space-x-2 hover:bg-gray-700 dark:hover:bg-gray-600 transition-colors"
           >
-            <Github size={20} />
+            <Github size={20} href='https://github.com/karthik-b-2001' />
             <span>GitHub</span>
           </a>
           <a

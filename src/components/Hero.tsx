@@ -13,7 +13,7 @@ const Hero = () => {
         </p>
         <div className="flex justify-center space-x-4">
           <a
-            href="https://github.com/"
+            href="https://github.com/karthik-b-2001"
             target="_blank"
             rel="noopener noreferrer"
             className="bg-gray-800 text-white px-6 py-3 rounded-lg flex items-center space-x-2 hover:bg-gray-700 transition-colors"
