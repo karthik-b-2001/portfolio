@@ -72,6 +72,27 @@ export const education: Education[] = [
 
 export const workExperience: Experience[] = [
   {
+    "title": "Digital Associate",
+    "company": "Conneqt Digital",
+    "location": "Bangalore, KA, IN",
+    "duration": "September 2024 - Present",
+    "points": [
+        "Collaborated with the delivery team at AB-InBev to develop a utility module for their proprietary SAAS application.",
+        "Designed and implemented a portal with multiple features, including report generation, an admin control panel, and planogram extraction.",
+        "Added functionality for template selection and account filtering from a global data pool, enabling users to generate custom reports from simulations based on selected parameters.",
+        "Developed backend features for a portal allowing bulk updates and deletions of values in a planogram file.",
+        "Worked closely with the delivery team to refine the user interface of the module, enhancing overall user experience."
+    ],
+    "techStack": [
+        "Python",
+        "Angular",
+        "Docker",
+        "Azure Container Registry",
+        "Azure Blob Storage",
+        "MySQL"
+    ]
+},
+  {
     title: "Software Engineer - Full Stack",
     company: "zevvo",
     location: "Bangalore, KA, IN",
@@ -127,7 +148,7 @@ export const internships: Experience[] = [
   {
     title: "Full-Stack Developer",
     company: "Center of CCTV Research",
-    location: "Remote",
+    location: "Hybrid",
     duration: "June 2022 to December 2022",
     points: [
       "Headed a team of three to construct a web application for CCTV research projects",
@@ -139,7 +160,7 @@ export const internships: Experience[] = [
     title: "Team Member",
     company: "Ashwa Mobility Open Source Vehicle",
     duration: "August 2019 to July 2022",
-    location: "Remote",
+    location: "Hybrid",
     points: [
       "Part of 12-member team developing autonomous electric vehicle",
       "Trained YOLO model achieving 88% accuracy",
@@ -173,17 +194,17 @@ export const certifications: Certification[] = [
   {
     name: "Python Data Structures",
     date: "December 2021",
-    link: "link",
+    link: "https://www.coursera.org/account/accomplishments/certificate/HZ5GH5R3TWP5",
   },
   {
     name: "Data Structures",
     date: "December 2020",
-    link: "link",
+    link: "https://www.coursera.org/account/accomplishments/certificate/UVMHR6W2ZVW6",
   },
   {
     name: "Joy of Computing Using Python",
     date: "October 2021",
-    link: "link",
+    link: "https://drive.google.com/file/d/1IgY8RTZCatSO42tKLREjUGKcp57lAzMN/view?usp=sharing",
   },
 ];
 
