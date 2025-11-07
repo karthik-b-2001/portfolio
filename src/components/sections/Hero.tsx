@@ -15,7 +15,7 @@ const Hero = () => {
           Passionate about {personalInfo.areasOfInterest.join(", ")}{" "}
           
         </p>
-        <p className="text-xl text-gray-600 dark:text-gray-300 mb-8 max-w-2xl mx-auto">Incoming MSCS Student @ Northeastern | ex-SDE1 @ Zevvo | ex-Conneqt
+        <p className="text-xl text-gray-600 dark:text-gray-300 mb-8 max-w-2xl mx-auto">MSCS Student @ Northeastern | ex-SDE1 @ Zevvo | ex-Conneqt
           Digital | Passionate About AI, Full-Stack & Scalable Systems | RVCE
           '23</p>
 
