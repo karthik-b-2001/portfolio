@@ -52,7 +52,7 @@ export const education: Education[] = [
     school:"Northeastern University",
     degree: "Master of Science in Computer Science",
     location: "Boston, MA, US",
-    duration: "September 2025 to December 2027",
+    duration: "2025 to 2027",
     details: ["Programming Design Paradigm, Database Management Systems"],
   },
   {
