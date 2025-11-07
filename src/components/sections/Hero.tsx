@@ -11,6 +11,7 @@ const Hero = () => {
         <h1 className="text-5xl md:text-6xl font-bold text-gray-800 dark:text-white mb-6">
           Hi, I'm {personalInfo.name}
         </h1>
+        
         <p className="text-xl text-gray-600 dark:text-gray-300 mb-8 max-w-2xl mx-auto">
           Passionate about {personalInfo.areasOfInterest.join(", ")}{" "}
           
