@@ -80,7 +80,7 @@ export const education: Education[] = [
 export const workExperience: Experience[] = [
   {
     "title": "Digital Associate",
-    "company": "Conneqt Digital",
+    "company": "Digitide Solutions Ltd",
     "location": "Bangalore, KA, IN",
     "duration": "September 2024 - Present",
     "points": [

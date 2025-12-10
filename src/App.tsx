@@ -2,6 +2,9 @@ import Header from './components/layout/Header';
 import Hero from './components/sections/Hero';
 import Experience from './components/sections/Experience';
 import Education from './components/sections/Education';
+import Resume from './components/sections/Resume';
+import VideoIntroductions from './components/sections/VideoIntroductions';
+import JobStrategy from './components/sections/JobStrategy';
 import Projects from './components/sections/Projects';
 import Contact from './components/sections/Contact';
 import Footer from './components/layout/Footer';
@@ -14,6 +17,9 @@ function App() {
         <Hero />
         <Experience />
         <Education />
+        <Resume />
+        <VideoIntroductions />
+        <JobStrategy />
         <Projects />
         <Contact />
       </main>
