@@ -1,4 +1,5 @@
 import React from 'react';
+import { motion } from 'framer-motion';
 import { LucideIcon } from 'lucide-react';
 
 interface ButtonProps extends React.ButtonHTMLAttributes<HTMLButtonElement> {
@@ -8,22 +9,24 @@ interface ButtonProps extends React.ButtonHTMLAttributes<HTMLButtonElement> {
 }
 
 const variantStyles = {
-  primary: 'bg-blue-600 hover:bg-blue-500 text-white',
-  secondary: 'bg-gray-200 dark:bg-gray-700 hover:bg-gray-300 dark:hover:bg-gray-600 text-gray-900 dark:text-white',
-  github: 'bg-gray-800 dark:bg-gray-700 hover:bg-gray-700 dark:hover:bg-gray-600 text-white',
-  linkedin: 'bg-blue-600 hover:bg-blue-500 text-white',
-  email: 'bg-green-600 hover:bg-green-500 text-white',
+  primary: 'bg-gradient-to-r from-red-600 to-red-700 hover:shadow-lg hover:shadow-red-600/50 text-white',
+  secondary: 'bg-yellow-400 hover:bg-yellow-300 hover:shadow-lg hover:shadow-yellow-400/50 text-black',
+  github: 'bg-black border-2 border-red-600 hover:bg-red-600/10 hover:shadow-lg hover:shadow-red-600/30 text-white',
+  linkedin: 'bg-black border-2 border-cyan-400 hover:bg-cyan-400/10 hover:shadow-lg hover:shadow-cyan-400/30 text-cyan-400',
+  email: 'bg-gradient-to-r from-red-600 to-red-700 hover:shadow-lg hover:shadow-red-600/50 text-white',
 };
 
 const Button = ({ variant = 'primary', icon: Icon, children, className = '', ...props }: ButtonProps) => {
   return (
-    <button
-      className={`px-6 py-3 rounded-lg flex items-center justify-center space-x-2 transition-colors ${variantStyles[variant]} ${className}`}
+    <motion.button
+      className={`px-6 py-3 rounded-lg flex items-center justify-center space-x-2 transition-all duration-300 ${variantStyles[variant]} ${className}`}
+      whileHover={{ scale: 1.05, y: -2 }}
+      whileTap={{ scale: 0.98 }}
       {...props}
     >
-      {Icon && <Icon size={20} />}
+      {Icon && <motion.div animate={{ scale: 1 }} transition={{ duration: 0.2 }}><Icon size={20} /></motion.div>}
       <span>{children}</span>
-    </button>
+    </motion.button>
   );
 };
 

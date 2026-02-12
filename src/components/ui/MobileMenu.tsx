@@ -1,5 +1,6 @@
 import { ThemeToggle } from './ThemeToggle';
 import SocialLinks from './SocialLinks';
+import { motion } from 'framer-motion';
 
 interface MobileMenuProps {
   isOpen: boolean;
@@ -11,8 +12,6 @@ const navItems = [
   { href: '#experience', label: 'Experience' },
   { href: '#education', label: 'Education' },
   { href: '#resume', label: 'Resume' },
-  { href: '#videos', label: 'Intro' },
-  { href: '#job-strategy', label: 'Strategy' },
   { href: '#projects', label: 'Projects' },
   { href: '#contact', label: 'Contact' },
 ];
@@ -21,24 +20,33 @@ const MobileMenu = ({ isOpen, onClose }: MobileMenuProps) => {
   if (!isOpen) return null;
 
   return (
-    <div className="md:hidden bg-white dark:bg-gray-800 border-t dark:border-gray-700 transition-colors">
-      <div className="container mx-auto px-4 py-4 flex flex-col space-y-4">
-        {navItems.map(({ href, label }) => (
-          <a
+    <motion.div
+      className="md:hidden glass-effect border-t border-red-600/30"
+      initial={{ opacity: 0, y: -20 }}
+      animate={{ opacity: 1, y: 0 }}
+      exit={{ opacity: 0, y: -20 }}
+      transition={{ duration: 0.3 }}
+    >
+      <div className="container mx-auto px-4 py-6 flex flex-col space-y-4">
+        {navItems.map(({ href, label }, i) => (
+          <motion.a
             key={href}
             href={href}
             onClick={onClose}
-            className="text-gray-600 dark:text-gray-300 hover:text-gray-900 dark:hover:text-white"
+            className="text-gray-300 hover:text-red-600 transition-colors font-medium"
+            initial={{ opacity: 0, x: -20 }}
+            animate={{ opacity: 1, x: 0 }}
+            transition={{ delay: i * 0.05, duration: 0.3 }}
           >
             {label}
-          </a>
+          </motion.a>
         ))}
-        <div className="flex items-center justify-between pt-4 border-t dark:border-gray-700">
+        <div className="flex items-center justify-between pt-6 border-t border-red-600/20">
           <SocialLinks />
           <ThemeToggle />
         </div>
       </div>
-    </div>
+    </motion.div>
   );
 };
 

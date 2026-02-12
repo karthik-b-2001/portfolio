@@ -1,3 +1,161 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@layer base {
+  :root {
+    --color-black: #000000;
+    --color-red-deep: #c5003c;
+    --color-red-dark: #880425;
+    --color-yellow: #f3e600;
+    --color-cyan: #55ead4;
+  }
+
+  body {
+    @apply bg-black;
+  }
+}
+
+@layer components {
+  .glass-effect {
+    @apply backdrop-blur-md bg-white/10 dark:bg-black/20 border border-white/20 dark:border-white/10;
+  }
+
+  .glow-border {
+    @apply relative border border-transparent;
+    background-image: linear-gradient(rgba(85, 234, 212, 0.15), rgba(243, 230, 0, 0.15)), 
+                      linear-gradient(90deg, rgba(85, 234, 212, 0.3), rgba(243, 230, 0, 0.3));
+    background-origin: border-box;
+    background-clip: padding-box, border-box;
+  }
+
+  .gradient-text {
+    @apply bg-gradient-to-r from-yellow-400 via-red-500 to-cyan-400 bg-clip-text text-transparent;
+  }
+
+  .glow-text {
+    @apply text-white drop-shadow-[0_0_20px_rgba(197,0,60,0.6)];
+  }
+
+  .neon-button {
+    @apply relative px-6 py-3 font-semibold rounded-lg transition-all duration-300;
+    @apply bg-gradient-to-r from-red-600 to-red-700 hover:from-red-500 hover:to-red-600;
+    @apply text-white shadow-lg hover:shadow-[0_0_30px_rgba(197,0,60,0.8)];
+    @apply transform hover:scale-105 active:scale-95;
+  }
+
+  .card-modern {
+    @apply glass-effect rounded-2xl p-6 hover:bg-white/15 dark:hover:bg-black/30;
+    @apply transition-all duration-300 hover:shadow-[0_8px_32px_rgba(85,234,212,0.2)];
+    @apply border-l-2 border-l-red-600;
+  }
+
+  .tech-badge {
+    @apply px-4 py-2 rounded-full text-sm font-medium;
+    @apply bg-gradient-to-r from-red-600/20 to-yellow-400/20;
+    @apply border border-red-500/50 text-red-300;
+    @apply hover:from-red-600/40 hover:to-yellow-400/40 transition-all duration-200;
+  }
+
+  .cyberpunk-card {
+    @apply relative bg-black border-2 border-red-600 p-6 rounded-xl;
+    @apply hover:border-yellow-400 transition-all duration-300;
+    @apply hover:shadow-[0_0_30px_rgba(243,230,0,0.4)];
+  }
+}
+
+@keyframes float {
+  0%, 100% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(-20px);
+  }
+}
+
+@keyframes glow-pulse {
+  0%, 100% {
+    box-shadow: 0 0 20px rgba(197, 0, 60, 0.4);
+  }
+  50% {
+    box-shadow: 0 0 40px rgba(197, 0, 60, 0.8);
+  }
+}
+
+@keyframes gradient-shift {
+  0%, 100% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+}
+
+@keyframes scan-line {
+  0% {
+    transform: translateY(-100%);
+  }
+  100% {
+    transform: translateY(100%);
+  }
+}
+
+@keyframes neon-flicker {
+  0%, 18%, 22%, 25%, 53%, 57%, 100% {
+    opacity: 1;
+  }
+  20%, 24%, 55% {
+    opacity: 0.5;
+  }
+}
+
+@keyframes float-3d {
+  0%, 100% {
+    transform: translateY(0px) rotateZ(0deg);
+  }
+  33% {
+    transform: translateY(-30px) rotateZ(5deg);
+  }
+  66% {
+    transform: translateY(-15px) rotateZ(-5deg);
+  }
+}
+
+@layer utilities {
+  .animate-float {
+    animation: float 3s ease-in-out infinite;
+  }
+
+  .animate-glow-pulse {
+    animation: glow-pulse 2s ease-in-out infinite;
+  }
+
+  .animate-gradient-shift {
+    animation: gradient-shift 3s ease infinite;
+    background-size: 200% 200%;
+  }
+
+  .animate-scan-line {
+    animation: scan-line 3s ease-in-out infinite;
+  }
+
+  .animate-neon-flicker {
+    animation: neon-flicker 2s ease-in-out infinite;
+  }
+
+  .animate-float-3d {
+    animation: float-3d 4s ease-in-out infinite;
+  }
+
+  .perspective {
+    perspective: 1000px;
+  }
+
+  .preserve-3d {
+    transform-style: preserve-3d;
+  }
+
+  .backface-hidden {
+    backface-visibility: hidden;
+  }
+}
