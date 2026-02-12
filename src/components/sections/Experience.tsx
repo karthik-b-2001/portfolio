@@ -145,9 +145,7 @@ const Experience = () => {
           <h2 className="text-5xl md:text-6xl font-bold mb-4">
             <span className="gradient-text">Experience</span>
           </h2>
-          <p className="text-gray-400 text-lg max-w-2xl mx-auto">
-            My professional journey building scalable systems and delivering impactful solutions
-          </p>
+  
         </motion.div>
 
         <div className="max-w-4xl mx-auto">
@@ -159,8 +157,6 @@ const Experience = () => {
               viewport={{ once: true }}
               className="text-3xl font-bold text-white mb-8 flex items-center"
             >
-              <span className="w-2 h-2 bg-red-600 rounded-full mr-3 animate-pulse"></span>
-              Work Experience
             </motion.h3>
             <div className="space-y-6">
               {workExperience.map((exp, index) => (
@@ -177,8 +173,6 @@ const Experience = () => {
               viewport={{ once: true }}
               className="text-3xl font-bold text-white mb-8 flex items-center"
             >
-              <span className="w-2 h-2 bg-yellow-400 rounded-full mr-3 animate-pulse"></span>
-              Internships & Early Career
             </motion.h3>
             <div className="space-y-6">
               {internships.map((exp, index) => (

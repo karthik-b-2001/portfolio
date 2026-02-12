@@ -31,9 +31,6 @@ const Education = () => {
           <h2 className="text-5xl md:text-6xl font-bold mb-4">
             <span className="gradient-text">Education</span>
           </h2>
-          <p className="text-gray-400 text-lg max-w-2xl mx-auto">
-            Building knowledge and skills at leading institutions
-          </p>
         </motion.div>
 
         <div className="max-w-4xl mx-auto">
