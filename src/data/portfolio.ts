@@ -54,13 +54,14 @@ export const education: Education[] = [
     location: "Boston, MA, US",
     duration: "2025 to 2027",
     details: ["Programming Design Paradigm, Database Management Systems"],
+    cgpa: "4/4",
   },
   {
     school: "RV College of Engineering",
     degree: "Computer Science and Engineering",
     location: "Bangalore, KA, IN",
     duration: "2019 to 2023",
-    cgpa: "8.04",
+    cgpa: "8.04/10",
   },
   {
     school: "KLE PU College",
