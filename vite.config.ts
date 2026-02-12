@@ -15,7 +15,7 @@ export default defineConfig({
       mangle:true
     },
   },
-  base: '/',
+  base: '/portfolio',
   css: {
     postcss: {
       plugins: [tailwindcss()],

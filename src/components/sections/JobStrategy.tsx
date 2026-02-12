@@ -1,7 +1,6 @@
 import { Target, Building2, CheckCircle, Users, ExternalLink } from 'lucide-react';
 
 const JobStrategy = () => {
-  // Replace with your actual Google Drive file ID
   const googleDriveFileId = '15_iEs_6UCkyoP6O8_1rV-iFYvQlWvCX4';
   const embedUrl = `https://drive.google.com/file/d/${googleDriveFileId}/preview`;
   const viewUrl = `https://drive.google.com/file/d/${googleDriveFileId}/view`;

@@ -14,7 +14,8 @@ export function useDarkMode() {
     if (isDark) {
       root.classList.add('dark');
       localStorage.theme = 'dark';
-    } else {
+    } else 
+      {
       root.classList.remove('dark');
       localStorage.theme = 'light';
     }

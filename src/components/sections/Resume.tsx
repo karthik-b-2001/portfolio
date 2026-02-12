@@ -1,8 +1,7 @@
 import { FileDown, ExternalLink } from 'lucide-react';
 
 const Resume = () => {
-  // Replace with your actual Google Drive file ID
-  const googleDriveFileId = '1to6jksfUbIY3h3h9s1KMgM_bo-p9T9qm';
+  const googleDriveFileId = '1kFAmO53vQ4tTVfmf7M4w3rWLhAHBp6n_';
   const embedUrl = `https://drive.google.com/file/d/${googleDriveFileId}/preview`;
   const viewUrl = `https://drive.google.com/file/d/${googleDriveFileId}/view`;
   const downloadUrl = `https://drive.google.com/uc?export=download&id=${googleDriveFileId}`;
@@ -14,7 +13,7 @@ const Resume = () => {
           Resume
         </h2>
         <p className="text-gray-600 dark:text-gray-400 text-center mb-8 max-w-2xl mx-auto">
-          Full-stack engineer with 2+ years of experience building scalable systems. 
+          Full-stack engineer with 2 years of experience building scalable systems. 
           Download or preview my resume below.
         </p>
 
