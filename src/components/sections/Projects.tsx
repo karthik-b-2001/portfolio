@@ -31,9 +31,6 @@ const Projects = () => {
           <h2 className="text-5xl md:text-6xl font-bold mb-4">
             <span className="gradient-text">Projects</span>
           </h2>
-          <p className="text-gray-400 text-lg max-w-2xl mx-auto">
-            Pioneering solutions that push the boundaries of technology
-          </p>
         </motion.div>
 
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 max-w-6xl mx-auto">
