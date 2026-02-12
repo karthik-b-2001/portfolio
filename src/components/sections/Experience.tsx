@@ -24,7 +24,6 @@ const ExperienceCard = ({ experience, index }: { experience: typeof workExperien
       transition: {
         duration: 0.8,
         delay: index * 0.1,
-        ease: "easeOut",
       },
     },
   };
@@ -55,7 +54,7 @@ const ExperienceCard = ({ experience, index }: { experience: typeof workExperien
           >
             <motion.div
               animate={{ rotate: 360 }}
-              transition={{ duration: 20, repeat: Infinity, ease: "linear" }}
+              transition={{ duration: 20, repeat: Infinity }}
             >
               <Briefcase size={20} className="text-red-500" />
             </motion.div>
@@ -129,7 +128,7 @@ const Experience = () => {
     visible: {
       opacity: 1,
       y: 0,
-      transition: { duration: 0.8, ease: "easeOut" },
+      transition: { duration: 0.8 },
     },
   };
 

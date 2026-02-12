@@ -1,6 +1,5 @@
 import React from 'react';
 import { Menu, X } from 'lucide-react';
-import { ThemeToggle } from '../ui/ThemeToggle';
 import SocialLinks from '../ui/SocialLinks';
 import Navigation from '../ui/Navigation';
 import MobileMenu from '../ui/MobileMenu';
@@ -27,7 +26,7 @@ const Header = () => {
               <motion.div
                 className="w-10 h-10 bg-gradient-to-r from-red-600 to-yellow-400 rounded-lg flex items-center justify-center font-bold text-black group-hover:shadow-[0_0_20px_rgba(197,0,60,0.8)] transition-all duration-300"
                 animate={{ rotate: 360 }}
-                transition={{ duration: 20, repeat: Infinity, ease: "linear" }}
+                transition={{ duration: 20, repeat: Infinity }}
               >
                 KB
               </motion.div>
@@ -38,7 +37,6 @@ const Header = () => {
 
             <div className="hidden md:flex items-center space-x-6">
               <SocialLinks />
-              <ThemeToggle />
             </div>
 
             <button

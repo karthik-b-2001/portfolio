@@ -14,7 +14,7 @@ const Projects = () => {
     visible: {
       opacity: 1,
       y: 0,
-      transition: { duration: 0.8, ease: "easeOut" },
+      transition: { duration: 0.8 },
     },
   };
 
@@ -56,7 +56,6 @@ const Projects = () => {
                 transition: {
                   duration: 0.8,
                   delay: index * 0.12,
-                  ease: "easeOut",
                 },
               },
             };
@@ -131,8 +130,8 @@ const Projects = () => {
                   transition={{
                     delay: index * 0.12 + 0.5,
                     duration: 0.8,
-                    origin: "left",
                   }}
+                  style={{ originX: 0 }}
                 >
                   <motion.div
                     className="w-full h-1 bg-gradient-to-r from-red-500 via-yellow-400 to-cyan-400 rounded-full"

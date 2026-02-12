@@ -6,12 +6,14 @@ import Resume from './components/sections/Resume';
 import Projects from './components/sections/Projects';
 import Contact from './components/sections/Contact';
 import Footer from './components/layout/Footer';
+import GlowingCursor from './components/ui/GlowingCursor';
 
 function App() {
   return (
-    <div className="min-h-screen bg-gray-50 dark:bg-gray-900 transition-colors">
+    <div className="min-h-screen bg-black transition-colors">
+      <GlowingCursor />
       <Header />
-      <main>
+      <main className="relative z-10">
         <Hero />
         <Experience />
         <Education />

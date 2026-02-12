@@ -83,7 +83,7 @@ export const workExperience: Experience[] = [
     "title": "Digital Associate",
     "company": "Digitide Solutions Ltd",
     "location": "Bangalore, KA, IN",
-    "duration": "September 2024 - Present",
+    "duration": "September 2024 - June 2025",
     "points": [
         "Collaborated with the delivery team at AB-InBev to develop a utility module for their proprietary SAAS application.",
         "Designed and implemented a portal with multiple features, including report generation, an admin control panel, and planogram extraction.",

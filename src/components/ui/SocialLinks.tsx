@@ -23,7 +23,7 @@ const SocialLinks = () => (
         color: "from-cyan-400 to-red-600",
         label: "Email",
       },
-    ].map(({ href, Icon, color, label }, i) => (
+    ].map(({ href, Icon, label }, i) => (
       <motion.a
         key={i}
         href={href}

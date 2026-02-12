@@ -14,7 +14,7 @@ const Education = () => {
     visible: {
       opacity: 1,
       y: 0,
-      transition: { duration: 0.8, ease: "easeOut" },
+      transition: { duration: 0.8 },
     },
   };
 
@@ -56,7 +56,6 @@ const Education = () => {
                 transition: {
                   duration: 0.8,
                   delay: index * 0.15,
-                  ease: "easeOut",
                 },
               },
             };

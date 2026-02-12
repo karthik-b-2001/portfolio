@@ -22,7 +22,7 @@ const Button = ({ variant = 'primary', icon: Icon, children, className = '', ...
       className={`px-6 py-3 rounded-lg flex items-center justify-center space-x-2 transition-all duration-300 ${variantStyles[variant]} ${className}`}
       whileHover={{ scale: 1.05, y: -2 }}
       whileTap={{ scale: 0.98 }}
-      {...props}
+      {...(props as any)}
     >
       {Icon && <motion.div animate={{ scale: 1 }} transition={{ duration: 0.2 }}><Icon size={20} /></motion.div>}
       <span>{children}</span>

@@ -10,7 +10,7 @@ interface SectionProps {
   isDark?: boolean;
 }
 
-const Section = ({ id, title, className = '', children, isDark = false }: SectionProps) => {
+const Section = ({ id, title, className = '', children }: SectionProps) => {
   const { ref, inView } = useInView({ triggerOnce: true, threshold: 0.1 });
 
   return (

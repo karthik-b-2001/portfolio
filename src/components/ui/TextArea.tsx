@@ -21,8 +21,7 @@ const TextArea = ({ label, id, className = '', ...props }: TextAreaProps) => (
         bg-black text-white placeholder-gray-500 resize-none
         transition-all duration-300
         ${className}`}
-      whileFocus={{ borderColor: 'rgb(197, 0, 60)', boxShadow: '0 0 15px rgba(197, 0, 60, 0.2)' }}
-      {...props}
+      {...(props as any)}
     />
   </motion.div>
 );

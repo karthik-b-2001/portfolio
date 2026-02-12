@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import { useState } from "react";
 import { Mail, Send, Zap } from "lucide-react";
 import { motion } from "framer-motion";
 import { useInView } from "react-intersection-observer";
@@ -21,7 +21,7 @@ const Contact = () => {
     visible: {
       opacity: 1,
       y: 0,
-      transition: { duration: 0.8, ease: "easeOut" },
+      transition: { duration: 0.8 },
     },
   };
 
@@ -42,7 +42,7 @@ const Contact = () => {
             x: [0, 40, 0],
             scale: [1, 1.2, 1],
           }}
-          transition={{ duration: 12, repeat: Infinity, ease: "easeInOut" }}
+          transition={{ duration: 12, repeat: Infinity }}
         />
         <motion.div
           className="absolute bottom-20 right-1/4 w-96 h-96 rounded-full mix-blend-multiply filter blur-3xl"
@@ -52,7 +52,7 @@ const Contact = () => {
             x: [0, -40, 0],
             scale: [1.2, 1, 1.2],
           }}
-          transition={{ duration: 14, repeat: Infinity, ease: "easeInOut", delay: 1 }}
+          transition={{ duration: 14, repeat: Infinity, delay: 1 }}
         />
         <motion.div
           className="absolute top-1/2 right-1/3 w-80 h-80 rounded-full mix-blend-multiply filter blur-3xl"
@@ -61,7 +61,7 @@ const Contact = () => {
             scale: [1, 1.3, 1],
             y: [0, -40, 0],
           }}
-          transition={{ duration: 16, repeat: Infinity, ease: "easeInOut", delay: 2 }}
+          transition={{ duration: 16, repeat: Infinity, delay: 2 }}
         />
       </motion.div>
 
@@ -102,16 +102,8 @@ const Contact = () => {
               backgroundClip: "text",
             }}
           >
-            Ready to Create?
+            Let's Build the Future
           </motion.h2>
-
-          <motion.p className="text-xl text-gray-300 mb-4 max-w-2xl mx-auto" variants={itemVariants}>
-            I'm always excited about new projects and collaborations.
-          </motion.p>
-
-          <motion.p className="text-lg text-red-500/80 font-semibold max-w-2xl mx-auto mb-12" variants={itemVariants}>
-            Drop me a line and let's build something extraordinary together.
-          </motion.p>
         </motion.div>
 
         {/* Main CTA Section */}
@@ -197,7 +189,7 @@ const Contact = () => {
                     className="absolute -inset-1 bg-gradient-to-r from-red-600 via-yellow-400 to-cyan-400 rounded-lg blur"
                     animate={{
                       opacity: isHovered ? 1 : 0.5,
-                      blur: isHovered ? 12 : 6,
+                      filter: isHovered ? "blur(12px)" : "blur(6px)",
                     }}
                     transition={{ duration: 0.3 }}
                   />
