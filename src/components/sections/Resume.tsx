@@ -3,7 +3,7 @@ import { motion } from 'framer-motion';
 import { useInView } from 'react-intersection-observer';
 
 const Resume = () => {
-  const googleDriveFileId = '1kFAmO53vQ4tTVfmf7M4w3rWLhAHBp6n_';
+  const googleDriveFileId = '1TInybyU2_BC14KiIcnf9dNZURNakzWEZ';
   const embedUrl = `https://drive.google.com/file/d/${googleDriveFileId}/preview`;
   const viewUrl = `https://drive.google.com/file/d/${googleDriveFileId}/view`;
   const downloadUrl = `https://drive.google.com/uc?export=download&id=${googleDriveFileId}`;
