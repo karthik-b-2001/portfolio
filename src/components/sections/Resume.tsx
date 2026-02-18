@@ -2,8 +2,9 @@ import { FileDown, ExternalLink } from 'lucide-react';
 import { motion } from 'framer-motion';
 import { useInView } from 'react-intersection-observer';
 
+
 const Resume = () => {
-  const googleDriveFileId = '1TInybyU2_BC14KiIcnf9dNZURNakzWEZ';
+  const googleDriveFileId = '1xapYrZIyyfjrCbUIbFR69whRlHYpvhul';
   const embedUrl = `https://drive.google.com/file/d/${googleDriveFileId}/preview`;
   const viewUrl = `https://drive.google.com/file/d/${googleDriveFileId}/view`;
   const downloadUrl = `https://drive.google.com/uc?export=download&id=${googleDriveFileId}`;
