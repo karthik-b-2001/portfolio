@@ -193,18 +193,35 @@ const PROJECTS = [
     period: '2022',
     description: 'Fine-tuned YOLOv3 for traffic sign detection (88% mAP). Built multi-sensor control-decision pipeline for steering and safety, trained steering angle prediction on recorded track data.',
     tags: ['YOLOv3', 'Computer Vision', 'Python'],
+    github: '',
   },
   {
     title: 'MultiCal',
     period: '2025–2026',
     description: 'Multi-calendar desktop app with MVC architecture — event creation, timezone conversion, cross-calendar copying. 90%+ test coverage with JUnit.',
     tags: ['Java', 'MVC', 'JUnit'],
+    github: 'https://github.com/karthik-b-2001/multiCal',
   },
   {
     title: 'SAR Imagery Analysis',
     period: '2021',
     description: 'Benchmarked CNN architectures (ResNet, EfficientNet, MobileNet, Inception) on synthetic aperture radar satellite imagery. Compared accuracy, inference speed, and model size.',
     tags: ['PyTorch', 'CNN', 'Remote Sensing'],
+    github: '',
+  },
+  {
+    title: 'ParetoFolio — Portfolio Optimization Engine',
+    period: '2025',
+    description: 'Full-stack portfolio optimization app implementing NSGA-II from scratch to compute the Pareto-optimal efficient frontier across 75 US equities. Features a FastAPI backend with yfinance data ingestion and a React frontend with an interactive efficient frontier scatter plot, allocation donut chart, and Sharpe-ranked table.',
+    tags: ['Python', 'FastAPI', 'React 19', 'TypeScript', 'Tailwind CSS', 'NSGA-II'],
+    github: 'https://github.com/karthik-b-2001/ParetoFolio',
+  },
+  {
+    title: 'SportsTV Streaming Data Warehouse',
+    period: '2025',
+    description: 'End-to-end OLTP→OLAP pipeline consolidating 2M+ streaming transactions into a Kimball star schema on Aiven-hosted MySQL 8, with a fully live R Markdown BI report covering growth trends, device breakdowns, and day-of-week analysis.',
+    tags: ['R', 'MySQL', 'SQLite', 'R Markdown', 'Kimball Star Schema'],
+    github: 'https://github.com/karthik-b-2001/sportstv-streaming-warehouse',
   },
 ]
 
@@ -226,6 +243,12 @@ function Projects() {
                 </span>
               ))}
             </div>
+            {p.github && (
+              <a href={p.github} target="_blank" rel="noopener noreferrer" className="mt-4 inline-flex items-center gap-1.5 text-xs text-gray-600 transition-colors hover:text-gray-400">
+                <GithubIcon className="h-3.5 w-3.5" />
+                GitHub
+              </a>
+            )}
           </div>
         ))}
       </div>
