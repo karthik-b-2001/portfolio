@@ -1,5 +1,7 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64">
   <rect width="64" height="64" rx="12" fill="#09090d"/>
   <rect x="2" y="2" width="60" height="60" rx="10" fill="none" stroke="#25de00" stroke-width="2" opacity="0.4"/>
-  <text x="32" y="43" text-anchor="middle" font-family="monospace" font-weight="700" font-size="30" fill="#25de00">KB</text>
+  <text x="32" y="43" text-anchor="middle" font-family="monospace" font-weight="700" font-size="30">
+    <tspan fill="#3b82f6">K</tspan><tspan fill="#ef4444">B</tspan>
+  </text>
 </svg>
