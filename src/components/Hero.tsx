@@ -119,7 +119,7 @@ export function Hero({ hero, headshot, socials }: HeroProps) {
               &nbsp;&nbsp;camera = <span className="text-[var(--color-edge)]">true</span>;
               <br />
               &nbsp;&nbsp;<span className="text-[var(--color-edge)]">ship</span>() {"{"}{" "}
-              <span className="text-[var(--color-border)]">/* always */</span> {"}"}
+              <span className="text-orange-400">/* always */</span> {"}"}
               <br />
               {"};"}
             </div>

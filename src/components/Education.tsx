@@ -63,6 +63,14 @@ export function Education({ data }: EducationProps) {
                   <p className="mt-0.5 text-xs text-[var(--color-slate)]">
                     {cert.issuer} · {cert.date}
                   </p>
+                  <a
+                    href={cert.href}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="mt-1.5 inline-flex items-center gap-1 text-xs font-semibold text-[var(--color-edge)] transition-colors hover:text-[var(--color-signal)]"
+                  >
+                    Link ↗
+                  </a>
                 </div>
               </div>
             ))}
