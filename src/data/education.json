@@ -1,0 +1,32 @@
+{
+  "eyebrow": "Where I studied",
+  "items": [
+    {
+      "institution": "Northeastern University",
+      "location": "Boston, MA",
+      "degree": "Master of Science, Computer Science",
+      "start": "Sep 2025",
+      "end": "Expected May 2027",
+      "gpa": "4.0",
+      "highlights": [
+        "Teaching Assistant, CS5200 Database Systems (graduate)",
+        "Coursework: Algorithms, Database Management Systems, Foundations of AI, Programming Design Paradigms, Machine Learning, Building Scalable Distributed Systems"
+      ]
+    },
+    {
+      "institution": "R V College of Engineering",
+      "location": "Bangalore, India",
+      "degree": "Bachelor of Engineering, Computer Science and Engineering",
+      "start": "2019",
+      "end": "2023",
+      "gpa": null,
+      "highlights": [
+        "Coursework: Data Structures, Operating Systems, Finite Automata, Advanced Algorithms"
+      ]
+    }
+  ],
+  "certifications": [
+    { "name": "Data Structures", "issuer": "Coursera", "date": "Dec 2020" },
+    { "name": "Python Data Structures", "issuer": "Coursera", "date": "Dec 2021" }
+  ]
+}

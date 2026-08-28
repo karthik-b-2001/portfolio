@@ -1,0 +1,45 @@
+{
+  "name": "Karthik Bharadwaj",
+  "role": "Full-Stack & Backend Engineer",
+  "headshot": {
+    "src": "/Karthik-Photo.png",
+    "alt": "Karthik Bharadwaj headshot",
+    "note": "PLACEHOLDER — replace /headshot-placeholder.png in the public/ folder with your LinkedIn headshot. Keep the same filename or update this src.",
+    "placeholder": true
+  },
+  "hero": {
+    "headline": "Hi I'm Karthik, I'm",
+    "rotatingRoles": ["a Backend Engineer", " an AI Enthusiast", "a Photographer"],
+    "subheadline": "I build scalable systems that cater to specific needs.",
+    "availability": "Open to Fall 2026 / Spring 2027 Co-op",
+    "primaryCta": { "label": "View my work", "href": "#projects" },
+    "secondaryCta": { "label": "Get in touch", "href": "#contact" },
+    "highlights": [
+      { "value": "1,000+", "label": "daily users served on a SaaS platform I built" },
+      { "value": "< 6 mo", "label": "zero-to-production backend at Zevvo" },
+      { "value": "4.0", "label": "GPA, MS Computer Science @ Northeastern" }
+    ]
+  },
+  "about": {
+    "eyebrow": "Who I am",
+    "paragraphs": [
+      "I'm a software engineer who likes the parts of the job most people avoid: schema decisions that decide how a product behaves two years later, auth flows that have to be airtight, and pipelines that can't drop a record. Over two years across three companies, I've built modular SaaS platforms serving over a thousand daily users, shipped a full backend from zero to production in under six months, and tuned .NET APIs down from 500ms to 250ms.",
+      "Right now I'm doing my Master's in Computer Science at Northeastern in Boston, where I've also worked as a teaching assistant for the graduate Database Systems course. My interests sit at the intersection of backend systems and applied AI — most recently a knowledge-graph-augmented RAG pipeline over the Mahabharata, and a multi-objective portfolio optimizer implementing NSGA-II from scratch.",
+      "I care about building things that are correct under load, failure, and scale — not just things that demo well."
+    ]
+  },
+  "socials": [
+    { "label": "GitHub", "href": "https://github.com/karthik-b-2001", "handle": "karthik-b-2001", "icon": "github" },
+    { "label": "LinkedIn", "href": "https://linkedin.com/in/karth1kb", "handle": "in/karth1kb", "icon": "linkedin" },
+    { "label": "Email", "href": "mailto:bharadwaj.kar@northeastern.edu", "handle": "bharadwaj.kar@northeastern.edu", "icon": "mail" }
+  ],
+  "contact": {
+    "eyebrow": "Say hello",
+    "blurb": "I'm open to software engineering co-op and full-time opportunities. The fastest way to reach me is email.",
+    "email": "bharadwaj.kar@northeastern.edu",
+    "location": "Boston, MA",
+    "phone": "+1 (617) 238-8138",
+    "phoneNote": "Optional on a public site — remove this field if you'd rather not list your number publicly.",
+    "availability": "Open to Fall 2026 / Spring 2027 Co-op"
+  }
+}

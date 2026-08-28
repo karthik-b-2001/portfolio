@@ -1,0 +1,13 @@
+{
+  "eyebrow": "Behind the lens",
+  "subheading": "A few frames from outside the terminal — add your own in src/data/gallery.json.",
+  "note": "PLACEHOLDER SET — drop your photos into public/gallery/ using these filenames (or update the src paths below), then edit alt/caption for each.",
+  "photos": [
+    { "src": "/gallery/1.jpg", "alt": "Photograph 1" },
+    { "src": "/gallery/2.jpg", "alt": "Photograph 2" },
+    { "src": "/gallery/3.jpg", "alt": "Photograph 3" },
+    { "src": "/gallery/4.jpg", "alt": "Photograph 4" },
+    { "src": "/gallery/5.jpg", "alt": "Photograph 5" },
+    { "src": "/gallery/6.jpg", "alt": "Photograph 6" }
+  ]
+}

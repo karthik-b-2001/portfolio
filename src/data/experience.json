@@ -1,0 +1,68 @@
+{
+  "eyebrow": "Where I've worked",
+  "subheading": "Two years building production software before grad school.",
+  "items": [
+    {
+      "company": "Digitide Solutions Ltd",
+      "client": "Client: AB-InBev",
+      "role": "Associate Software Engineer",
+      "location": "Bangalore, India",
+      "start": "Sep 2024",
+      "end": "Jun 2025",
+      "summary": "Built and maintained a modular SaaS platform for AB-InBev warehouse operations, serving 1,000+ daily users.",
+      "highlights": [
+        "Built a modular SaaS platform (Angular + FastAPI + PostgreSQL) serving 1,000+ daily users across 4+ microservices and 20+ REST endpoints, with SKU/shelf management and 3D planogram visualization via Three.js, deployed on Azure behind a load balancer with Docker across dev, pre-prod, and prod.",
+        "Built an AI chatbot (FastAPI + OpenAI API) grounded in PostgreSQL lookups and document retrieval, letting warehouse staff query inventory in natural language and cutting manual lookup time by 60%.",
+        "Streamed real-time sensor telemetry over WebSockets into Chart.js dashboards for proactive environmental alerting across facilities.",
+        "Automated data collection and reporting pipelines via cron jobs and Python scripts against PostgreSQL, delivering scheduled analytics with zero manual handoff."
+      ],
+      "stack": ["Angular", "FastAPI", "PostgreSQL", "Docker", "Azure", "Three.js", "OpenAI API", "WebSockets"]
+    },
+    {
+      "company": "Zevvo",
+      "client": null,
+      "role": "Software Engineer, Full Stack",
+      "location": "Bangalore, India",
+      "start": "Jan 2024",
+      "end": "Jul 2024",
+      "summary": "Shipped a full product backend from zero to production in under six months.",
+      "highlights": [
+        "Designed 15 MongoDB collections from scratch using an embedded-document pattern, backing 35+ REST endpoints across bookings, billing, subscriptions, and catalog; shipped from zero to production in under 6 months and onboarded 50+ users in the first month.",
+        "Implemented JWT auth with inactivity expiry in httpOnly cookies, CORS origin whitelisting, and server-side validation on every request, reducing auth-related bugs by 40%.",
+        "Automated 4 GitHub Actions pipelines deploying Dockerized containers to AWS ECS (EC2 + ALB) with IAM-scoped roles, cutting release cadence from weekly to every 3 days.",
+        "Built the admin portal and customer-facing site in React/Node.js/Express, with Redis caching and a CloudFront CDN over S3, and Lambda handling background jobs."
+      ],
+      "stack": ["React", "Node.js", "Express", "MongoDB", "AWS", "Docker", "GitHub Actions", "Redis"]
+    },
+    {
+      "company": "Sun Precision Tools",
+      "client": null,
+      "role": "Software Engineer",
+      "location": "Bangalore, India",
+      "start": "Aug 2023",
+      "end": "Dec 2023",
+      "summary": "Digitized paper-based manufacturing workflows from scratch.",
+      "highlights": [
+        "Replaced a paper-based invoice workflow with a React/Node.js/MySQL application handling line items, tax calculations, and PDF generation for 50 daily shop-floor users.",
+        "Built a 5-state gauge lifecycle manager with state-transition validation, compliance tracking, and CSV export, replacing a fully manual paper process.",
+        "Implemented automated PDF report generation for invoices and gauge compliance."
+      ],
+      "stack": ["React.js", "Node.js", "MySQL"]
+    },
+    {
+      "company": "Crestron Electronics",
+      "client": null,
+      "role": "Software Development Intern",
+      "location": "Bangalore, India",
+      "start": "Mar 2023",
+      "end": "Jul 2023",
+      "summary": "Tuned .NET Core APIs and built React components for device-management products.",
+      "highlights": [
+        "Added pagination, fuzzy search, and composite indexes to .NET Core REST APIs backed by MSSQL, cutting average response time from 500ms to 250ms across device-management endpoints.",
+        "Built mobile-responsive React components (admin panels, device state views, connected-device dashboards) with Google Tag Manager analytics across 3 customer-facing modules.",
+        "Wrote Jest component tests across the frontend, raising coverage from 62% to 79% and reducing post-deployment bugs by 20%."
+      ],
+      "stack": ["React", ".NET Core", "MSSQL", "Jest", "Google Tag Manager"]
+    }
+  ]
+}

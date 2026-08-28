@@ -1,0 +1,86 @@
+{
+  "eyebrow": "What I've built",
+  "subheading": "Things I've built to think through problems I found interesting.",
+  "items": [
+    {
+      "title": "VyasaGraph",
+      "subtitle": "Mahabharata Knowledge Graph & RAG Chatbot",
+      "year": "2026",
+      "featured": true,
+      "blurb": "A knowledge graph over the 1.8M-word Mahabharata corpus — 228 characters and 315 relationships sourced from three independent pipelines — with a graph-augmented RAG chatbot grounded in both structured facts and source text.",
+      "details": [
+        "Built the graph from three independent sources — spaCy dependency-parsed attestations from the original text, a structured CSV dataset, and Wikidata SPARQL queries — with human review and deduplication across all of them.",
+        "Implemented a graph-augmented RAG pipeline combining Neo4j Cypher queries with ChromaDB semantic search (960 embedded chunks), served through a FastAPI streaming backend and a React chat interface with real-time citation display."
+      ],
+      "stack": ["Python", "FastAPI", "React 19", "TypeScript", "Neo4j", "ChromaDB", "spaCy", "Ollama"],
+      "links": [
+        { "label": "GitHub", "href": "https://github.com/karthik-b-2001/vyasagraph", "icon": "github" }
+      ],
+      "tags": ["AI/ML", "RAG", "Knowledge Graphs", "Full-Stack"]
+    },
+    {
+      "title": "ParetoFolio",
+      "subtitle": "Portfolio Optimization Engine",
+      "year": "2026",
+      "featured": true,
+      "blurb": "A multi-objective portfolio optimizer implementing NSGA-II from scratch, serving Pareto-optimal portfolios across 75 US equities through an interactive efficient frontier.",
+      "details": [
+        "Built a responsive React 19 frontend with interactive data visualization and a typed FastAPI backend exposing a RESTful optimization API.",
+        "Implemented NSGA-II from scratch — SBX crossover, polynomial mutation, tournament selection, and crowding distance — producing Pareto-optimal portfolios with a Sharpe-ranked table and interactive efficient frontier."
+      ],
+      "stack": ["TypeScript", "React 19", "FastAPI", "Python", "Pydantic v2"],
+      "links": [
+        { "label": "GitHub", "href": "https://github.com/karthik-b-2001/ParetoFolio", "icon": "github" }
+      ],
+      "tags": ["Full-Stack", "Optimization", "Data Science"]
+    },
+    {
+      "title": "SportsTV Streaming Data Warehouse",
+      "subtitle": "ETL Pipeline & Dimensional Model",
+      "year": "2025",
+      "featured": true,
+      "blurb": "A Kimball-style star schema and idempotent ETL pipeline achieving 99%+ match rate across 2M+ streaming transactions from heterogeneous sources.",
+      "details": [
+        "Engineered a bulk-batched, idempotent ETL pipeline with surrogate-key resolution and partition pruning, achieving a 99%+ match rate across 2M+ streaming transactions.",
+        "Modeled a Kimball-style star schema with five conformed dimensions and a RANGE-partitioned fact table, driving a fully automated BI report from live SQL queries."
+      ],
+      "stack": ["R", "MySQL 8", "SQLite", "R Markdown", "Kimball Star Schema"],
+      "links": [
+        { "label": "GitHub", "href": "https://github.com/karthik-b-2001/sportstv-streaming-warehouse", "icon": "github" }
+      ],
+      "tags": ["Data Engineering", "ETL", "Data Modeling"]
+    },
+    {
+      "title": "Gojo Satoru Hand-Tracking VFX",
+      "subtitle": "Real-Time Gesture-Driven Visual Effects",
+      "year": "2025",
+      "featured": false,
+      "blurb": "A real-time, markerless VFX engine that overlays anime-inspired cursed-energy effects onto a live webcam feed, driven entirely by hand gestures — no green screen or controller.",
+      "details": [
+        "Tracks both hands at 21 landmarks each, classifies five distinct gestures, and maps each to a different effect: hand-following auras, energy orbs, a charged beam between the palms, and a full-frame Domain Expansion with background segmentation.",
+        "Implemented a 200-particle physics system, additive glow compositing, and confidence-mask alpha blending, then ported the desktop OpenCV app to the browser via a per-session WebRTC processor served through Streamlit."
+      ],
+      "stack": ["Python", "OpenCV", "MediaPipe", "NumPy", "Streamlit", "WebRTC"],
+      "links": [
+        { "label": "GitHub", "href": "https://github.com/karthik-b-2001/gojo-handtracker", "icon": "github" }
+      ],
+      "tags": ["Computer Vision", "Real-Time", "Applied ML"]
+    },
+    {
+      "title": "Java Calendar Application",
+      "subtitle": "MVC Calendar with Recurring Events",
+      "year": "2025",
+      "featured": false,
+      "blurb": "A calendar application in Java with MVC architecture supporting recurring event series, timezone handling, and multiple views, built with rigorous mutation-tested coverage.",
+      "details": [
+        "Built with extensive use of design patterns — Builder, Command, Strategy, Visitor, Decorator, and Factory Method — with a full Swing GUI.",
+        "Validated the test suite with JUnit and PIT mutation testing, achieving high mutation kill rates that proved effectiveness beyond simple line coverage."
+      ],
+      "stack": ["Java", "Swing", "JUnit", "PIT", "MVC"],
+      "links": [
+        { "label": "GitHub", "href": "https://github.com/karthik-b-2001/multiCal", "icon": "github" }
+      ],
+      "tags": ["Software Engineering", "Design Patterns", "Testing"]
+    }
+  ]
+}

@@ -1,0 +1,32 @@
+{
+  "meta": {
+    "siteTitle": "Karthik Bharadwaj",
+    "tagline": "Full-Stack & Backend Engineer",
+    "description": "Portfolio of Karthik Bharadwaj — full-stack and backend engineer, MS Computer Science at Northeastern University. Building systems that hold up under scale.",
+    "favicon": "/favicon.svg",
+    "themeColorMeta": "#0b0d14"
+  },
+  "navigation": {
+    "brand": "KB",
+    "links": [
+      { "label": "About", "href": "#about", "type": "section" },
+      { "label": "Experience", "href": "#experience", "type": "section" },
+      { "label": "Projects", "href": "#projects", "type": "section" },
+      { "label": "Skills", "href": "#skills", "type": "section" },
+      { "label": "Gallery", "href": "#gallery", "type": "section" },
+      {
+        "label": "Blog",
+        "href": "https://karthik-b-2001.github.io/blog/",
+        "type": "external",
+        "note": "DUMMY LINK — replace href with your real blog URL later",
+        "external": true
+      },
+      { "label": "Contact", "href": "#contact", "type": "section" }
+    ],
+    "resume": {
+      "label": "Resume",
+      "href": "/Karthik_Bharadwaj_Resume.pdf",
+      "note": "Drop your resume PDF into the public/ folder with this filename, or update the href."
+    }
+  }
+}
