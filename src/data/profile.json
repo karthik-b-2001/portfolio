@@ -10,8 +10,7 @@
   "hero": {
     "headline": "Hi I'm Karthik, I'm",
     "rotatingRoles": ["a Backend Engineer", " an AI Enthusiast", "a Photographer"],
-    "subheadline": "I build scalable systems that cater to specific needs.",
-    "availability": "Open to Fall 2026 / Spring 2027 Co-op",
+    "subheadline": "I build scalable systems that cater to specific needs. Two years of experience across companies designing and scaling backend systems. Built the billing and subscription platform for zevvo, taking a product from the whiteboard to production in under six months. Currently pursuing my MS in Computer Science at Northeastern University.",
     "primaryCta": { "label": "View my work", "href": "#projects" },
     "secondaryCta": { "label": "Get in touch", "href": "#contact" },
     "highlights": [
@@ -23,9 +22,9 @@
   "about": {
     "eyebrow": "Who I am",
     "paragraphs": [
-      "I'm a software engineer who likes the parts of the job most people avoid: schema decisions that decide how a product behaves two years later, auth flows that have to be airtight, and pipelines that can't drop a record. Over two years across three companies, I've built modular SaaS platforms serving over a thousand daily users, shipped a full backend from zero to production in under six months, and tuned .NET APIs down from 500ms to 250ms.",
-      "Right now I'm doing my Master's in Computer Science at Northeastern in Boston, where I've also worked as a teaching assistant for the graduate Database Systems course. My interests sit at the intersection of backend systems and applied AI — most recently a knowledge-graph-augmented RAG pipeline over the Mahabharata, and a multi-objective portfolio optimizer implementing NSGA-II from scratch.",
-      "I care about building things that are correct under load, failure, and scale — not just things that demo well."
+      "I got into computer science because I wanted to build things people actually use, not just study them. A lot of what I know now came from grinding problems on the side, spinning up small projects, and breaking plenty of them before they worked. Somewhere along the way it stopped feeling like coursework and became the thing I genuinely wanted to do for a living.",
+      "That pull led me toward backend and systems work. Over two years across three companies I built platforms serving 1,000+ daily users, took a product backend from zero to production in under six months, and cut API latency from 500ms to 250ms. Now I'm at Northeastern for my Master's in Computer Science, going deeper on systems design, data engineering, and applied AI, and looking for a Fall 2026 / Spring 2027 co-op with a team that cares about getting things right.",
+      "Outside of work, you'll usually find me at the gym or out with my camera, capturing frames wherever I happen to be."
     ]
   },
   "socials": [
