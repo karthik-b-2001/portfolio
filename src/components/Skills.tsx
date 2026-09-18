@@ -30,7 +30,6 @@ function SkillTile({ skill, index }: { skill: Skill; index: number }) {
         )}
       </div>
       <div className="text-[12px] font-semibold text-[var(--color-paper)]">{skill.name}</div>
-      <div className="text-[10px] text-[var(--color-slate)]">{skill.category}</div>
     </div>
   );
 }

@@ -8,11 +8,13 @@ export interface ThemeMeta {
   swatch: string;
 }
 
+// Each swatch is split diagonally: the theme's background against its accent.
+// Accent alone can't tell Dark from Light — both are the same purple.
 export const THEME_META: ThemeMeta[] = [
-  { id: "dark", label: "Dark", swatch: "#7c6af2" },
-  { id: "light", label: "Light", swatch: "#6c4fe0" },
-  { id: "cyberpunk", label: "Cyberpunk", swatch: "#ff2e88" },
-  { id: "sunset", label: "Sunset", swatch: "#ff6b4a" },
+  { id: "dark", label: "Dark", swatch: "linear-gradient(135deg, #0b0d14 0 50%, #7c6af2 50% 100%)" },
+  { id: "light", label: "Light", swatch: "linear-gradient(135deg, #f7f7fb 0 50%, #6c4fe0 50% 100%)" },
+  { id: "cyberpunk", label: "Cyberpunk", swatch: "linear-gradient(135deg, #0a0014 0 50%, #ff2e88 50% 100%)" },
+  { id: "sunset", label: "Sunset", swatch: "linear-gradient(135deg, #1a0b2e 0 50%, #ff6b4a 50% 100%)" },
 ];
 
 const PRESET_IDS = THEME_META.map((t) => t.id);

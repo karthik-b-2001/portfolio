@@ -1,13 +1,26 @@
 {
   "eyebrow": "Behind the lens",
-  "subheading": "A few frames from outside the terminal — add your own in src/data/gallery.json.",
-  "note": "PLACEHOLDER SET — drop your photos into public/gallery/ using these filenames (or update the src paths below), then edit alt/caption for each.",
+  "subheading": "A few frames from outside the terminal.",
   "photos": [
-    { "src": "/gallery/1.jpg", "alt": "Photograph 1" },
-    { "src": "/gallery/2.jpg", "alt": "Photograph 2" },
-    { "src": "/gallery/3.jpg", "alt": "Photograph 3" },
-    { "src": "/gallery/4.jpg", "alt": "Photograph 4" },
-    { "src": "/gallery/5.jpg", "alt": "Photograph 5" },
-    { "src": "/gallery/6.jpg", "alt": "Photograph 6" }
+    {
+      "src": "/gallery/photo-1.jpg",
+      "alt": "The lit spire of the Empire State Building disappearing into low night fog",
+      "caption": "Empire State, swallowed by the fog"
+    },
+    {
+      "src": "/gallery/photo-2.jpg",
+      "alt": "Pink and orange clouds at sunset above bare winter trees and rooftops",
+      "caption": "Last light over the rooftops"
+    },
+    {
+      "src": "/gallery/photo-3.jpg",
+      "alt": "A carved South Indian temple gopuram rising against a broken, cloud-streaked dusk sky",
+      "caption": "Gopuram at dusk"
+    },
+    {
+      "src": "/gallery/photo-4.jpg",
+      "alt": "Airport terminal and runway lights mirrored in still water during blue hour",
+      "caption": "Blue hour across the harbor"
+    }
   ]
 }

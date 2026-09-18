@@ -30,7 +30,7 @@ export function About({ about, highlights, location }: AboutProps) {
           ))}
         </div>
 
-        <div className="grid grid-cols-2 content-center gap-4">
+        <div className="grid grid-cols-2 gap-4 lg:grid-rows-2">
           {highlights.map((h) => (
             <div key={h.label} className={`${cardClass} flex flex-col items-center justify-center text-center`}>
               <div className="font-mono text-[26px] font-extrabold tracking-tight text-(--color-signal)">{h.value}</div>

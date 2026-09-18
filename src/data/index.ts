@@ -14,10 +14,13 @@ import type { SkillsData } from "../types/skills";
 import type { EducationData } from "../types/education";
 import type { GalleryData } from "../types/gallery";
 
+// `as` rather than `satisfies`: JSON imports widen "section"/"external" to
+// `string`, which can never satisfy the NavLinkType union. The others use
+// `satisfies` so missing or misspelled fields fail the build.
 export const site = siteJson as SiteData;
-export const profile = profileJson as ProfileData;
-export const experience = experienceJson as ExperienceData;
-export const projects = projectsJson as ProjectsData;
-export const skills = skillsJson as SkillsData;
-export const education = educationJson as EducationData;
-export const gallery = galleryJson as GalleryData;
+export const profile = profileJson satisfies ProfileData;
+export const experience = experienceJson satisfies ExperienceData;
+export const projects = projectsJson satisfies ProjectsData;
+export const skills = skillsJson satisfies SkillsData;
+export const education = educationJson satisfies EducationData;
+export const gallery = galleryJson satisfies GalleryData;

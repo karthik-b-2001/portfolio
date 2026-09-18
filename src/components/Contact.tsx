@@ -33,14 +33,6 @@ export function Contact({ contact, socials }: ContactProps) {
               {contact.email}
             </a>
           </div>
-          {contact.phone && (
-            <div className="flex items-center gap-2 text-[14px] text-[var(--color-slate)]">
-              <span aria-hidden="true">📱</span>
-              <a href={`tel:${contact.phone}`} className="font-medium text-[var(--color-signal)]">
-                {contact.phone}
-              </a>
-            </div>
-          )}
           <div className="flex items-center gap-2 text-[14px] text-[var(--color-slate)]">
             <span aria-hidden="true">📍</span>
             {contact.location}

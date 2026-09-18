@@ -18,15 +18,13 @@
         "label": "Blog",
         "href": "https://karthik-b-2001.github.io/blog/",
         "type": "external",
-        "note": "DUMMY LINK — replace href with your real blog URL later",
         "external": true
       },
       { "label": "Contact", "href": "#contact", "type": "section" }
     ],
     "resume": {
       "label": "Resume",
-      "href": "/Karthik_Bharadwaj_Resume.pdf",
-      "note": "Drop your resume PDF into the public/ folder with this filename, or update the href."
+      "href": "/docs/KarthikB_Resume.pdf"
     }
   }
 }

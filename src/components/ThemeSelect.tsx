@@ -21,7 +21,7 @@ export function ThemeSelect() {
           className="h-4 w-4 rounded-full transition-transform duration-200"
           style={{
             background: t.swatch,
-            border: t.id === theme ? "2.5px solid var(--color-paper)" : "2.5px solid transparent",
+            border: t.id === theme ? "2.5px solid var(--color-paper)" : "2.5px solid var(--color-border)",
             transform: t.id === theme ? "scale(1.2)" : "scale(1)",
           }}
         />

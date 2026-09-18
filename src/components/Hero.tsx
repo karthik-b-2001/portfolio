@@ -104,7 +104,12 @@ export function Hero({ hero, headshot, socials }: HeroProps) {
             </div>
 
             <div className="aspect-[4/5] overflow-hidden">
-              <img src={headshot.src} alt={headshot.alt} className="h-full w-full object-cover" loading="eager" />
+              <img
+                src={headshot.src}
+                alt={headshot.alt}
+                className="h-full w-full object-cover brightness-[1.4] contrast-[1.08] saturate-[1.35]"
+                loading="eager"
+              />
             </div>
 
             <div className="px-5 py-3.5 font-mono text-xs leading-[1.8] text-[var(--color-slate)]">
@@ -112,13 +117,13 @@ export function Hero({ hero, headshot, socials }: HeroProps) {
               <span className="text-[var(--color-signal)]">Karthik</span> extends{" "}
               <span className="text-[var(--color-edge)]">Engineer</span> {"{"}
               <br />
-              &nbsp;&nbsp;backend = <span className="text-[var(--color-edge)]">true</span>;
+              &nbsp;&nbsp;backend | frontend = <span className="text-[var(--color-edge)]">true</span>;
               <br />
               &nbsp;&nbsp;ai = <span className="text-[var(--color-edge)]">true</span>;
               <br />
               &nbsp;&nbsp;camera = <span className="text-[var(--color-edge)]">true</span>;
               <br />
-              &nbsp;&nbsp;<span className="text-[var(--color-edge)]">ship</span>() {"{"}{" "}
+              &nbsp;&nbsp;<span className="text-[var(--color-edge)]">learn</span>() {"{"}{" "}
               <span className="text-orange-400">/* always */</span> {"}"}
               <br />
               {"};"}

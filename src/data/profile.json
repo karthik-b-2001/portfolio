@@ -3,14 +3,13 @@
   "role": "Full-Stack & Backend Engineer",
   "headshot": {
     "src": "/Karthik-Photo.png",
-    "alt": "Karthik Bharadwaj headshot",
-    "note": "PLACEHOLDER — replace /headshot-placeholder.png in the public/ folder with your LinkedIn headshot. Keep the same filename or update this src.",
-    "placeholder": true
+    "alt": "Karthik Bharadwaj headshot"
   },
   "hero": {
+    "availability": "Open to Spring 2027 Co-opsß",
     "headline": "Hi I'm Karthik, I'm",
-    "rotatingRoles": ["a Backend Engineer", " an AI Enthusiast", "a Photographer"],
-    "subheadline": "I build scalable systems that cater to specific needs. Two years of experience across companies designing and scaling backend systems. Built the billing and subscription platform for zevvo, taking a product from the whiteboard to production in under six months. Currently pursuing my MS in Computer Science at Northeastern University.",
+    "rotatingRoles": ["a Backend Engineer", "an AI Enthusiast", "a Photographer"],
+    "subheadline": "I build scalable systems that cater to specific needs. Two years of experience across companies designing and scaling backend systems. Built the billing and subscription platform for Zevvo, taking a product from the whiteboard to production in under six months. Currently pursuing my MS in Computer Science at Northeastern University.",
     "primaryCta": { "label": "View my work", "href": "#projects" },
     "secondaryCta": { "label": "Get in touch", "href": "#contact" },
     "highlights": [
@@ -23,7 +22,7 @@
     "eyebrow": "Who I am",
     "paragraphs": [
       "I got into computer science because I wanted to build things people actually use, not just study them. A lot of what I know now came from grinding problems on the side, spinning up small projects, and breaking plenty of them before they worked. Somewhere along the way it stopped feeling like coursework and became the thing I genuinely wanted to do for a living.",
-      "That pull led me toward backend and systems work. Over two years across three companies I built platforms serving 1,000+ daily users, took a product backend from zero to production in under six months, and cut API latency from 500ms to 250ms. Now I'm at Northeastern for my Master's in Computer Science, going deeper on systems design, data engineering, and applied AI, and looking for a Fall 2026 / Spring 2027 co-op with a team that cares about getting things right.",
+      "That pull led me toward backend and systems work. Over two years across three companies I built platforms serving 1,000+ daily users, took a product backend from zero to production in under six months, and cut API latency from 500ms to 250ms. Now I'm at Northeastern for my Master's in Computer Science, going deeper on systems design, data engineering, and applied AI, and looking for a Spring 2027 co-op with a team that cares about getting things right.",
       "Outside of work, you'll usually find me at the gym or out with my camera, capturing frames wherever I happen to be."
     ]
   },
@@ -37,8 +36,6 @@
     "blurb": "I'm open to software engineering co-op and full-time opportunities. The fastest way to reach me is email.",
     "email": "bharadwaj.kar@northeastern.edu",
     "location": "Boston, MA",
-    "phone": "+1 (617) 238-8138",
-    "phoneNote": "Optional on a public site — remove this field if you'd rather not list your number publicly.",
-    "availability": "Open to Fall 2026 / Spring 2027 Co-op"
+    "availability": "Open to Spring 2027 Co-ops"
   }
 }

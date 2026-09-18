@@ -42,8 +42,6 @@ export interface Contact {
   blurb: string;
   email: string;
   location: string;
-  phone?: string;
-  phoneNote?: string;
   availability: string;
 }
 
