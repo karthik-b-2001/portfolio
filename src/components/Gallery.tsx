@@ -3,6 +3,7 @@ import { AnimatePresence, motion } from "framer-motion";
 import type { GalleryData, GalleryPhoto } from "../types/gallery";
 import { SectionHeading } from "./SectionHeading";
 import { Icon } from "./Icon";
+import { asset } from "../lib/asset";
 
 interface GalleryProps {
   data: GalleryData;
@@ -26,7 +27,7 @@ function Tile({ photo, onOpen }: { photo: GalleryPhoto; onOpen: () => void }) {
       {!failed ? (
         <>
           <img
-            src={photo.src}
+            src={asset(photo.src)}
             alt={photo.alt}
             loading="lazy"
             onError={() => setFailed(true)}
@@ -141,7 +142,7 @@ export function Gallery({ data }: GalleryProps) {
               className="flex max-h-full max-w-full flex-col items-center gap-3"
             >
               <img
-                src={active.src}
+                src={asset(active.src)}
                 alt={active.alt}
                 className="max-h-[80vh] max-w-[90vw] rounded-lg object-contain shadow-2xl"
               />

@@ -2,6 +2,7 @@ import { useState } from "react";
 import type { Navigation } from "../types/site";
 import { Icon } from "./Icon";
 import { ThemeSelect } from "./ThemeSelect";
+import { asset } from "../lib/asset";
 
 interface NavbarProps {
   navigation: Navigation;
@@ -45,7 +46,7 @@ export function Navbar({ navigation }: NavbarProps) {
 
           <a
             className="hidden rounded-[var(--radius-sm)] bg-[var(--color-signal)] px-[1em] py-[0.55em] text-[var(--step-caption)] font-semibold text-[var(--color-ink)] transition-[filter] duration-150 hover:brightness-110 min-[860px]:inline-flex"
-            href={navigation.resume.href}
+            href={asset(navigation.resume.href)}
             target="_blank"
             rel="noopener noreferrer"
           >
@@ -97,7 +98,7 @@ export function Navbar({ navigation }: NavbarProps) {
           )}
           <a
             className="inline-flex w-fit rounded-[var(--radius-sm)] bg-[var(--color-signal)] px-[1em] py-[0.55em] text-[var(--step-caption)] font-semibold text-[var(--color-ink)]"
-            href={navigation.resume.href}
+            href={asset(navigation.resume.href)}
             target="_blank"
             rel="noopener noreferrer"
             onClick={() => setOpen(false)}

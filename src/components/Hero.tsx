@@ -2,6 +2,7 @@ import { TypeAnimation } from "react-type-animation";
 import { motion, useReducedMotion } from "framer-motion";
 import type { Hero as HeroData, Headshot, Social } from "../types/profile";
 import { Icon } from "./Icon";
+import { asset } from "../lib/asset";
 
 interface HeroProps {
   hero: HeroData;
@@ -105,7 +106,7 @@ export function Hero({ hero, headshot, socials }: HeroProps) {
 
             <div className="aspect-[4/5] overflow-hidden">
               <img
-                src={headshot.src}
+                src={asset(headshot.src)}
                 alt={headshot.alt}
                 className="h-full w-full object-cover brightness-[1.4] contrast-[1.08] saturate-[1.35]"
                 loading="eager"

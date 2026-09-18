@@ -14,6 +14,7 @@ import { SectionDivider } from "./components/SectionDivider";
 import { Reveal } from "./components/Reveal";
 import { Terminal } from "./components/Terminal";
 import { ScrollProgress } from "./components/ScrollProgress";
+import { asset } from "./lib/asset";
 
 function App() {
   useEffect(() => {
@@ -82,7 +83,7 @@ function App() {
         role={profile.role}
         sectionIds={site.navigation.links.filter((link) => link.type === "section").map((link) => link.href.replace("#", ""))}
         highlights={profile.hero.highlights}
-        resumeHref={site.navigation.resume.href}
+        resumeHref={asset(site.navigation.resume.href)}
       />
     </>
   );
