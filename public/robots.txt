@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://karthik-b-2001.github.io/portfolio/sitemap.xml
+Sitemap: https://karthik-b-2001.github.io/sitemap.xml
